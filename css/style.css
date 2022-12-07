@@ -44,7 +44,7 @@ body{
     mask-position: bottom;
     height: 85vh;
     margin-top: 15vh;
-    background-image: url("/images/grid-g042b0c187_1920.jpg");
+    background-image: url("../images/grid-g042b0c187_1920.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
