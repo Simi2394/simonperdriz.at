@@ -69,7 +69,7 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    background-color: rgb(248,140,246);
+    background-color: rgb(249,77,146);
     background-size: cover;
     margin-top: -15vh;
     height: 15vh;
@@ -281,6 +281,7 @@ nav ul li a.menu-link-active{
 
 .work img{
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
