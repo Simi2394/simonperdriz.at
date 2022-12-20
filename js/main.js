@@ -1,4 +1,14 @@
-/*-------Funktion für aktive Tabs in über mich*/
+/*-------Funktion Typing Text 1---------------*/
+var string = "Passionierter Kitesurfer und Teilzeit-Student 🎓";
+var str = string.split("");
+var el = document.getElementById('str');
+
+(function animate() {
+str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
+var running = setTimeout(animate, 90);
+})();
+
+/*-------Funktion für aktive Tabs in über mich-----------------*/
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
