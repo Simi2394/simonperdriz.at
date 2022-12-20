@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- ----------fontawesome für Logos---------- -->
     <script src="https://kit.fontawesome.com/36752da940.js" crossorigin="anonymous"></script>
-    <!--Test Funktion Menu-->
-    <!--<script src="js/app.js"></script>-->
-    <!--Test Funktion Menu-->
 </head>
 <!-- ----------navbar---------- -->
 <body>
@@ -67,7 +64,7 @@
                         <div class="tab-contents" id="ausbildung">
                             <ul>
                                 <li><span>2020-2024</span><br>Bachelor of Science Business Information Technology an der Berner Fachhochschule BFH in Bern - Schweiz</li>
-                                <li><span>2017-2017</span><br>MarKom Zertifikatsprüfung bei Educavanti in Thun - Schweizli>
+                                <li><span>2017-2017</span><br>MarKom Zertifikatsprüfung bei Educavanti in Thun - Schweiz<li>
                                 <li><span>2017-2017</span><br>Personality Coaching an der Stage School, Hamburg in Zürich - Schweiz</li>
                                 <li><span>2010-2013</span><br>Lehr als Kaufmann an der KBS Kaufmännische Berufsschule in Fribourg - Schweiz</li>
                             </ul>
@@ -97,7 +94,6 @@
                     <a href="https://www.youtube.com/watch?v=l5DCarnrj0s&ab_channel=TheOKKiteboarder">Mehr</a>
                 </div>
                 <div>
-                    <!--Fehler Logo noch suchen-->
                     <i class="fa-solid fa-hockey-puck"></i>
                     <h2>Eishockey</h2>
                     <p>Seit meinem 6. Lebensjahr spiele ich Eishockey. Wenn du mehr über mein Werdegang erfahren möchtest, sieht dir die Infos unter Mehr an.</p>
@@ -112,38 +108,33 @@
             </div>
         </div>
     </section>
-    <!-- ----------keine Ahnung offen---------- -->
-    <!-- ----------noch anpassen oder löschen---------- -->
-    <section id="portfolio" data-nav="???">
+    <!-- ----------Outdoor-Aktivitäten---------- -->
+    <section id="outdoor" data-nav="Outdoor">
         <div class="container">
-            <!-- ----------noch anpassen oder löschen---------- -->
-            <h1 class="sub-title">My Work</h1>
-            <!-- ----------noch anpassen oder löschen---------- -->
+            <h1 class="sub-title">Outdoor-Aktivitäten</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="images/phone-wallpaper-ga5325187c_1280.jpg">
                     <div class="layer">
                         <h3>Gärtnern</h3>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <p>Gärtnern zähle ich zu meinen liebsten Outdoor-Aktivitäten. Wie du starten kannst, siehst du unter folgenden Link, damit auch du bald etwas aus deinem eigenen Garten oder Balkon essen kannst.</p>
+                            <a href="https://www.youtube.com/watch?v=B5HKwtBjXis"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <!-- ----------noch anpassen oder löschen---------- -->
                 <div class="work">
                     <img src="images/snow-trail-g9a8e24b04_1280.jpg">
                     <div class="layer">
                         <h3>Snowboarden</h3>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <p>Im Tiefschnee Snowboarden, ist wie schweben (ein unbeschreibliches Gefühl). </p>
+                            <a href="https://www.instagram.com/snowboardermag/?hl=de"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <!-- ----------noch anpassen oder löschen---------- -->
                 <div class="work">
                     <img src="images/alps-gf4a283495_1280.jpg">
                     <div class="layer">
                         <h3>Wandern</h3>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <p>Auch im Sommer sind die Berge wundeschön. Finde auch du eine passende Wanderung untern dem folgenden Link.</p>
+                            <a href="https://wegwandern.ch/"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -163,8 +154,8 @@
                         <a href="https://www.instagram.com/Simi_2394/"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://github.com/Simi2394"><i class="fa-brands fa-github"></i></a>
                     </div>
-                    <!--Anhang anpassen-->
-                    <a href="images/DSC6397.jpg" download class="btn btn2">Download CV</a>
+                    <!--CV Download-->
+                    <a href="files/Muster_CV.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <!-- ----------Kontaktformular---------- -->
                 <div class="contact-right">
@@ -187,76 +178,7 @@
         </div>
     </section>
 
-<script>
-
-    /*-------Funktion für aktive Tabs in über mich*/
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-    /*---------Funktion für sidemenu Smartphones----------*/
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-
-    /*---------Funktion für Kontaktformular Responses----------*/
-    const form = document.getElementById('form');
-    const msg = document.getElementById('msg');
-
-    form.addEventListener('submit', function(e) {
-        const formData = new FormData(form);
-        e.preventDefault();
-        var object = {};
-        formData.forEach((value, key) => {
-            object[key] = value
-        });
-        var json = JSON.stringify(object);
-        msg.innerHTML = "Bitte warten..."
-
-        fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: json
-            })
-            .then(async (response) => {
-                let json = await response.json();
-                if (response.status == 200) {
-                    msg.innerHTML = json.message;
-                } else {
-                    console.log(response);
-                    msg.innerHTML = json.message;
-                }
-            })
-            .catch(error => {
-                console.log(error);
-                msg.innerHTML = "Da ging etwas schief.";
-            })
-            .then(function() {
-                form.reset();
-                setTimeout(() => {
-                    msg.innerHTML = "";
-                }, 5000);
-            });
-    });
-</script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
