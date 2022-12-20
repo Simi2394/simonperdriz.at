@@ -260,9 +260,9 @@ nav ul li a.menu-link-active{
     color: #f8e473
 }
 
-/*-----------Portfolio noch anpassen oder löschen------------*/
+/*-----------Outdoor------------*/
 
-#portfolio{
+#outdoor{
     padding: 50px 0;
 }
 
@@ -293,6 +293,7 @@ nav ul li a.menu-link-active{
     background: linear-gradient(rgba(0,0,0,0.6), #0a1c58);
     border-radius: 10px;
     position: absolute;
+    top: 0;
     left: 0;
     bottom: 0;
     overflow: hidden;
